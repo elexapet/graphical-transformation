@@ -27,13 +27,9 @@ public:
 	virtual void out(std::ostream& os);
 	virtual void in(std::istream& is);
 	virtual shape* clone() = 0;
-	virtual void setEndPoint(uint x, uint y) = 0;
-	virtual void updateEndPoint(uint x, uint y) = 0;
-	virtual bool done() = 0;
 protected:
 	uint color;
 	matrix p1;
-	uint curEndPoint = 1;
 
 	shape& operator=(const shape& other);
 };

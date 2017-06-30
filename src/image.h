@@ -9,11 +9,12 @@
 #pragma once
 
 #include "shape.h"
-#include "line.h"
 #include "triangle.h"
 #include "gcontext.h"
 #include <vector>
 #include <string>
+#include <sstream>
+#include <fstream>
 
 class image
 {
@@ -29,4 +30,8 @@ public:
 	void erase();
 private:
 	std::vector<shape*> myShapes;
+
+	void eatWhiteSpaces(std::istream& fileStream);
+	int parseSTL(std::istream& fileStream);
+
 };

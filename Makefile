@@ -3,7 +3,7 @@ CCP		= 	g++
 CFLAGS	=	-Wall -pedantic -std=c++11 -g
 LIBS	=	-lX11
 BIN		=	out/draw-app
-SRC		=	src/main.cpp src/shape.cpp src/line.cpp src/triangle.cpp src/matrix.cpp \
+SRC		=	src/main.cpp src/shape.cpp src/triangle.cpp src/matrix.cpp \
 			src/image.cpp src/x11context.cpp src/mydrawing.cpp src/gcontext.cpp \
 			src/viewcontext.cpp
 OBJ		=	$(SRC:.cpp=.o)

@@ -10,6 +10,7 @@
 
 #include "drawbase.h"
 #include "image.h"
+#include "viewcontext.h"
 #include <fstream>
 
 class MyDrawing : public DrawingBase
@@ -29,8 +30,9 @@ public:
 private:
 	ViewContext vc;
 	image theImage;
-	shape* drawnShape = NULL;
 	int shapeSelector = 0;
 	uint color = GraphicsContext::WHITE;
 	bool dragging = false;
+	int dragOriginX;
+	int dragOriginY;
 };

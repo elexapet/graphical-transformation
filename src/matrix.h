@@ -94,6 +94,7 @@ class matrix
 		// throw (matrixException)
 		//
 		matrix operator+(const matrix& rhs) const;
+		matrix operator-(const matrix& rhs) const;
  
 		// Matrix multiplication - lhs and rhs must be compatible 
 		// otherwise an exception shall be thrown

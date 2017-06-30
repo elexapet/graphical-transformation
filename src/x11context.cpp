@@ -211,3 +211,4 @@ void X11Context::drawCircle(int x, int y, int radius)
 	XFlush(display);
 }
 
+

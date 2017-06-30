@@ -141,6 +141,22 @@ matrix matrix::operator+(const matrix& rhs) const
 	return product;
 }
 
+matrix matrix::operator-(const matrix& rhs) const
+{
+	if (rows != rhs.rows  || cols != rhs.cols) 
+		throw matrixException("size does not match |-|");
+
+	matrix product(rows, cols);
+
+	for (uint i = 0; i < rows; ++i)
+		for (uint j = 0; j < cols; ++j)
+		{
+			product.the_matrix[i][j] = the_matrix[i][j] - rhs.the_matrix[i][j];
+		}
+
+	return product;
+}
+
 
 matrix matrix::operator*(const matrix& rhs) const
 {

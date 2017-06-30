@@ -8,8 +8,7 @@ void shape::out(std::ostream& os)
 
 void shape::in(std::istream& is)
 {
-	is >> color;
-	is >> p1;
+	
 }
 
 shape& shape::operator=(const shape& other)
